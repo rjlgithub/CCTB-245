@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Computer.cs" />
+    <Compile Include="Cylinder.cs" />
     <Compile Include="DesktopComputer.cs" />
     <Compile Include="LaptopComputer.cs" />
     <Compile Include="Product.cs" />
