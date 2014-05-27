@@ -12,6 +12,14 @@ namespace Assignment51
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
 
+        public Student(int id, string name, string phoneNumber)
+        {
+            Id = id;
+            Name = name;
+            PhoneNumber = phoneNumber;
+        }
+
+
         public virtual void DisplayStudent()
         {
             //Temp - just ouput to console
