@@ -1,0 +1,25 @@
+At the end of this course (CCTB-245), you should be able to...
+
+- List the basic pillars of OOP ( bject-Oriented Programming)
+- Explain the purpose and use of Encapsulation, Inheritance and Polymorphism
+- Explain the difference between Static and Non-Static Methods
+- Create classes that demonstrate Encapsulation, Inheritance and Polymorphism
+- Define the term "Collection" in C# and list various kinds of Collections
+- Explain how run-time errors are generated and processec (Exceptions + Exception Handling)
+- Define the terms Abstract Class, Interface, and Extension Methods
+- Create abstract classes, interfaces and extension methods
+
+
+----------------------------------------
+Brief overview of Level 3 (CCTB-345)
+
+- Using the Entity Framework to store/retreive data in a database
+- Basic introduction to LINQ (Language INtegrated Query)
+
+----------------------------------------
+Brief overview of Level 4 (CCTB-445)
+
+- More LINQ (Language INtegrated Query)
+- Other topics...
+  - Architecture
+  - User interfaces
