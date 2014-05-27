@@ -12,6 +12,10 @@ namespace Assignment51
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
 
+        public Student()
+        {
+        }
+
         public Student(int id, string name, string phoneNumber)
         {
             Id = id;
