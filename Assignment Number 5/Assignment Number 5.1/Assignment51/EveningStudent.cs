@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment51
 {
+    //Public Class
     public class EveningStudent : Student
     {
         public string RoomNumber { get; set; }
@@ -21,6 +22,5 @@ namespace Assignment51
         {
             Console.WriteLine("Id: {0}, Name: {1}, Phone: {2}, Room Number: {3}, Course Name: {4}", Id, Name, PhoneNumber, RoomNumber, CourseName);
         }
-
     }
 }
