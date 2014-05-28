@@ -32,13 +32,9 @@ namespace CardGame.GameElements
 
         //TODO:  Create a constructor that takes two parameters: a Suit and a CardFace
 
-        public Card(Suit suit)
+        public Card(Suit suit, CardFace cardFace)
         {
             Suit = suit;
-        }
-
-        public Card(CardFace cardFace)
-        {
             Face = cardFace;
         }
 
