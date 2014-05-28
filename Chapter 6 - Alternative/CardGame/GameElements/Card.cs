@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace CardGame.GameElements
 {
     //Extra data types that relate to the Card class
-    enum Suit { HEARTS, DIAMONDS, CLUBS, SPADES }
-    enum CardFace
+    public enum Suit { HEARTS, DIAMONDS, CLUBS, SPADES }
+    public enum CardFace
     {
         Ace = 1,
         Deuce,
@@ -16,7 +16,7 @@ namespace CardGame.GameElements
     }
 
     //An Immutable type - A card cannot be changed once it is created
-    class Card
+    public class Card
     {
         public Suit Suit { get; private set; }
         public CardFace Face { get; private set; }
