@@ -27,12 +27,14 @@ namespace CardGame.GameElements
         public void Shuffle()
         {
             int counter = _rnd.Next(20, 50) * 52;  //how many times fo move a card
-            while (counter < 0)
+            while (counter > 0)
             {
                 int index = _rnd.Next(Cards.Count);
                 Card aCard = Cards[index];
                 Cards.RemoveAt(index);  //Pull card out from middle
                 Cards.Add(aCard);       //Add card to the end
+
+                counter--;
             }
         }
 
@@ -43,7 +45,7 @@ namespace CardGame.GameElements
                 throw new ArgumentException("Not enough players to deal cards to...");
             foreach (var person in players)
                 if(person == null)
-                    throw new ArgumentException("Cannot deal to a 'NULL' player.");
+                    throw new ArgumentException("Cannot deal to a 'null' player.");
             if (cards <= 0)
                 throw new ArgumentOutOfRangeException("Cannot deal " + cards + " cards.");
             if (cards * players.Length > Cards.Count)
@@ -57,6 +59,7 @@ namespace CardGame.GameElements
                     player.Add(card);
                     Cards.RemoveAt(0);
                 }
+                cards--;  //decrement each time a card is dealt
             }
 
 

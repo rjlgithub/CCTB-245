@@ -23,20 +23,21 @@ namespace CardGame.GameElements
 
         public Card Peek(int CardPosition)
         {
-            if (CardPosition > 0 || CardPosition >= Count)
+            if (CardPosition < 0 || CardPosition >= Count)
                 throw new ArgumentOutOfRangeException("No card at position " + CardPosition + " - only " + Count + " cards in my hand.");
             return Hand[CardPosition];
         }
 
         public Card Pull(int CardPosition)
         {
-            if (CardPosition > 0 || CardPosition >= Count)
+            if (CardPosition < 0 || CardPosition >= Count)
                 throw new ArgumentOutOfRangeException("No card at position " + CardPosition + " - only " + Count + " cards in my hand.");
             return Hand[CardPosition];
             Card discarded = Hand[CardPosition];
             Hand.RemoveAt(CardPosition);
             return discarded;
         }
+
 
     }
 }

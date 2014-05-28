@@ -26,12 +26,24 @@ namespace CardGame
             DeckOfCards myDeck = new DeckOfCards();
             myDeck.Shuffle();
             DisplayCards(myDeck);
+            Player me = new Player(), you = new Player(), friend = new Player();
+            myDeck.Deal(5, me, you, friend);
+            DisplayPlayerCards(me,"me");
+            DisplayPlayerCards(you,"you");
             //Uh-oh not so secure...
             myDeck.Cards.Add(new Card(Suit.SPADES, CardFace.Ace));
             myDeck.Cards.Add(new Card(Suit.SPADES, CardFace.Ace));
             myDeck.Cards.Add(new Card(Suit.SPADES, CardFace.Ace));
             Console.WriteLine("There are {0} cards in the deck.", myDeck.Cards.Count);
 
+        }
+ 
+        public void DisplayPlayerCards(Player person,String whom)
+        {
+            Console.WriteLine("Looking at a player ({0}) cards...", whom);
+            for (int index = 0; index < person.Count; index++)
+                Console.WriteLine(person.Peek(index));
+            Console.WriteLine();
         }
 
         private void DisplayCards(DeckOfCards myDeck)
